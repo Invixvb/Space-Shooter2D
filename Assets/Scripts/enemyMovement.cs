@@ -16,7 +16,6 @@ public class enemyMovement : MonoBehaviour
     //Als de positie groter is dan 7.5 op de x as en hij gaat naar rechts dan is goLeft true en goRight false dus gaat die naar links, bij de laatste colum stukje is het andersom
     void FixedUpdate()
     {
-
         if (goRight && !goLeft)
         {
             transform.Translate(-Random.Range(0.3f, 0.2f), 0, 0);
@@ -26,7 +25,7 @@ public class enemyMovement : MonoBehaviour
         {
             transform.Translate(Random.Range(0.3f, 0.2f), 0, 0);
         }
-      
+
 
         if (transform.position.x >= 7.5f && goRight)
         {

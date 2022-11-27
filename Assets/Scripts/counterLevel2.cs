@@ -14,7 +14,7 @@ public class counterLevel2 : MonoBehaviour
 
     private void Update()
     {
-        if(counterEnemies == 5)
+        if (counterEnemies == 5)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

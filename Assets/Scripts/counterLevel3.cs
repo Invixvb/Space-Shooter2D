@@ -14,7 +14,7 @@ public class counterLevel3 : MonoBehaviour
 
     private void Update()
     {
-        if(counterEnemies == 8)
+        if (counterEnemies == 8)
         {
             SceneManager.LoadScene("YouWon");
         }

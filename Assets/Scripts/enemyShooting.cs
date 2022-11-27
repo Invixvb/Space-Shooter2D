@@ -5,8 +5,8 @@ using UnityEngine;
 public class enemyShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
-    float ran;
-    float coolingDown;
+    private float ran;
+    private float coolingDown;
 
 
     void Start()
@@ -16,7 +16,7 @@ public class enemyShooting : MonoBehaviour
 
     //Hierbij zeg ik dat die moet wachten elke keer met schieten, 
     //dan pakt die de bulletPrefab en die houd de positie aan die die heeft, maar met de movement van het anderen script gaat die naar voren.
-    void FixedUpdate()
+    void Update()
     {
         if (Time.time > coolingDown)
         {

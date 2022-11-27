@@ -16,7 +16,7 @@ public class counterLevel1 : MonoBehaviour
     //Hierbij kijkt die naar de active scene en daarbij in de buildindex eentje erbij doet dus de eerst volgende scene laad.
     private void Update()
     {
-        if(counterEnemies == 3)
+        if (counterEnemies == 3)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }

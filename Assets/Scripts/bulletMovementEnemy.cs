@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class bulletMovementEnemy : MonoBehaviour
 {
-
     public float moveSpeed;
 
     void FixedUpdate()
